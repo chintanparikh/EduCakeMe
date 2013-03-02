@@ -17,4 +17,8 @@
 #   runner "AnotherModel.prune_old_records"
 # end
 
-# Learn more: http://github.com/javan/whenever
+# Learn more: http://github.com/javan/
+
+every 1.day, at: '3:00 am' do
+	rake "find_and_generate_orders"
+end
