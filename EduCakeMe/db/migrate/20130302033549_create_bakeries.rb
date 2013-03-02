@@ -1,6 +1,7 @@
 class CreateBakeries < ActiveRecord::Migration
   def change
     create_table :bakeries do |t|
+      t.integer :id
       t.string :name
       t.integer :address_id
       t.integer :zip
