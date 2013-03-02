@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/
 
 every 1.day, at: '3:00 am' do
-	rake "find_and_generate_orders"
+	rake "educakeme:find_and_generate_orders"
 end
