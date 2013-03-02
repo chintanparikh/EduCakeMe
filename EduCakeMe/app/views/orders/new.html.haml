@@ -1,0 +1,40 @@
+%h1 Order Details
+
+=form_for(@order) do |f|
+  =f.label :deliver_to_name
+  =f.text_field :deliver_to_name
+
+  %br
+
+  =f.label :university_id
+  =f.select :university_id, options_from_collection_for_select(University.all, :id, :name)
+  
+    
+  %br
+
+  =f.label :deliver_date
+  =f.text_field :deliver_date
+
+  %br
+
+  =f.label :deliver_time
+  =f.text_field :deliver_time
+
+  %br
+
+  =f.label :deliver_to_phone
+  =f.telephone_field :deliver_to_phone
+
+  %br
+
+  =f.label :receive_email
+  =f.text_field :receive_email
+
+  %br
+
+  =f.label :special_instructions
+  =f.text_area :special_instructions
+
+  %br
+
+  =f.submit 'Proceed to Checkout'
