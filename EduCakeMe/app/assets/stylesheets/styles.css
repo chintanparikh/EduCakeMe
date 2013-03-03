@@ -7170,6 +7170,7 @@ h3.tag-title a:hover {
 
 h4{
 	text-align: center;
+  color: 15px;
 	
 }
 
@@ -7632,6 +7633,14 @@ p.tag-desc {
   background-size: cover;
 }
 
+#add_messages {
+  text-align: center;
+}
+
+#cake_message {
+  width: 960px;
+  margin: 0 auto;
+}
 /* line 212, ../sass/_company.scss */
 .lower {
   margin: 0 0;

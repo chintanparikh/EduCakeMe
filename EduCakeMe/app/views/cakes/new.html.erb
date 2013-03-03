@@ -108,43 +108,14 @@
 
 </div>
 
-<div id="3rd-hideaway" class="row" style="display:none;">
-  <h4>Step 3: Write a Message on your Cake!</h4>
-
-	<div class="six columns" class="frosting">
-		<div class="content-box" id="frosting-1">
-  			<div class="content-box-image barley-image"></div>
-  			<div class="gap"></div>
-  			<div class="content-box-icon">
-        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
-        		<%= image_tag 'check.png', class: 'check' %>
-  				<%= image_tag 'vanilla_logo.jpg' %></a>
-  			</div>
-	  		<h3><a href="http://getbarley.com/">Vanilla Icing</a></h3>
-		</div>
-	</div>
-	
-	<div class="six columns" class="frosting">
-		<div class="content-box" id="frosting-2">
-  			<div class="content-box-image barley-image"></div>
-  			<div class="gap"></div>
-  			<div class="content-box-icon">
-        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
-        		<%= image_tag 'check.png', class: 'check' %>
-  				<%= image_tag 'vanilla_logo.jpg'%></a>
-  			</div>
-	  		<h3><a href="http://getbarley.com/">Chocolate Icing</a></h3>
-		</div>
-	</div>
-	
-</div>
 
 <div id="add_messages" style="display:none;">
+  <h4>Step 3: Write a Message on your Cake!</h4>
 
   <%= form_for @cake do |cake| %>	
   	<%= cake.hidden_field :flavor %>
 	<%= cake.hidden_field :frosting %>
-    <h4>Add a custom message: </h4><%= cake.text_field :message %>
+    <%= cake.text_field :message %>
     <%= cake.submit %>
   <% end %>
 </div>
