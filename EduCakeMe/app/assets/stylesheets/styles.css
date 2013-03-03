@@ -7174,6 +7174,23 @@ h4{
 	
 }
 
+#new_order {
+  text-align: center;
+}
+#new_order input {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#new_order select {
+  width: 300px;
+}
+
+#new_order textarea {
+  width: 300px;
+  margin : 0 auto;
+}
+
 /* line 302, ../sass/_blog.scss */
 p.tag-desc {
   font-size: 11px;
