@@ -6021,7 +6021,7 @@ h3 {
 
 /* line 154, ../sass/styles.scss */
 .hero {
-  height: 800px;
+  height: 600px;
   max-height: 100%;
   background: url(../assets/plain_field.jpg) no-repeat center center fixed;
   -webkit-background-size: 100%;
