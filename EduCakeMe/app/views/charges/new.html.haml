@@ -1,0 +1,16 @@
+%form#payment-form{:action => "", :method => "POST"}
+  .form-row
+    %label
+      %span Card Number
+      %input.card-number{:autocomplete => "off", :size => "20", :type => "text"}/
+  .form-row
+    %label
+      %span CVC
+      %input.card-cvc{:autocomplete => "off", :size => "4", :type => "text"}/
+  .form-row
+    %label
+      %span Expiration (MM/YYYY)
+      %input.card-expiry-month{:size => "2", :type => "text"}/
+    %span /
+    %input.card-expiry-year{:size => "4", :type => "text"}/
+  %button.submit-button{:type => "submit"} Submit Payment
