@@ -37,15 +37,14 @@
   <div class="row">
 	  <div class="twelve columns">
 	  	<div class="intro">
-	  		<h3 data-barley="plainmade_homepage_intro_title" data-barley-editor="mini">HEADER TEXT</h3>
-	  		<p data-barley="plainmade_homepage_intro_content" data-barley-editor="simple">Insert shpeal about why we are good.</p>
+	  		<h3 data-barley="plainmade_homepage_intro_title" data-barley-editor="mini">It's easy to send your student a cake!</h3>
 	  	</div>
 	  </div>
   </div>
 
 <!-- Featured Blocks -->
 
-<h4 data-barley="plainmade_homepage_flavor_title" data-barley-editor="mini">Pick a delectable cake flavor</h4>
+<h4 data-barley="plainmade_homepage_flavor_title" data-barley-editor="mini"><b>Step 1:</b> Pick a delectable cake flavor</h4>
 
 <div class="row">
   
@@ -59,8 +58,7 @@
   			<%= image_tag 'vanilla_logo.jpg'%></a>
   		</div>
   		<h3><a href="http://getbarley.com/">Yellow</a></h3>
-  		<p data-barley="plainmade_barleydescription" data-barley-editor="plus">Description of sexy yellow cake.&nbsp;
-  		  <a href="http://getbarley.com/">More...</a></p>
+  		<p data-barley="plainmade_barleydescription" data-barley-editor="plus">The Classic-- Light, Fluffy, Delicious.</p>
 		</div>
 	</div>
 	
@@ -74,17 +72,80 @@
   			<%= image_tag 'chocolate_logo.jpg'%></a>
   		</div></ul>
   		<h3><a href="http://plainmade.com/space">Chocolate</a></h3>
-  		<p data-barley="plainmade_plainspacedescription" data-barley-editor="plus">Description of sexy chocolate cake.
-  		  <a href="http://plainmade.com/space">More...</a></p>
+  		<p data-barley="plainmade_plainspacedescription" data-barley-editor="plus">Rich and Decadent.</p>
 		</div>
 	</div>
 </div>
 
-<div id="hideaway" style="display:none;">
+<div id="hideaway" class="row" style="display:none;">
+  <h4>Step 2: Choose your frosting</h4>
+
+	<div class="six columns" class="frosting">
+		<div class="content-box" id="frosting-1">
+  			<div class="content-box-image barley-image"></div>
+  			<div class="gap"></div>
+  			<div class="content-box-icon">
+        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
+        		<%= image_tag 'check.png', class: 'check' %>
+  				<%= image_tag 'vanilla_logo.jpg' %></a>
+  			</div>
+	  		<h3><a href="http://getbarley.com/">Vanilla Icing</a></h3>
+		</div>
+	</div>
+	
+	<div class="six columns" class="frosting">
+		<div class="content-box" id="frosting-2">
+  			<div class="content-box-image barley-image"></div>
+  			<div class="gap"></div>
+  			<div class="content-box-icon">
+        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
+        		<%= image_tag 'check.png', class: 'check' %>
+  				<%= image_tag 'vanilla_logo.jpg'%></a>
+  			</div>
+	  		<h3><a href="http://getbarley.com/">Chocolate Icing</a></h3>
+		</div>
+	</div>
+
+</div>
+
+<div id="3rd-hideaway" class="row" style="display:none;">
+  <h4>Step 3: Write a Message on your Cake!</h4>
+
+	<div class="six columns" class="frosting">
+		<div class="content-box" id="frosting-1">
+  			<div class="content-box-image barley-image"></div>
+  			<div class="gap"></div>
+  			<div class="content-box-icon">
+        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
+        		<%= image_tag 'check.png', class: 'check' %>
+  				<%= image_tag 'vanilla_logo.jpg' %></a>
+  			</div>
+	  		<h3><a href="http://getbarley.com/">Vanilla Icing</a></h3>
+		</div>
+	</div>
+	
+	<div class="six columns" class="frosting">
+		<div class="content-box" id="frosting-2">
+  			<div class="content-box-image barley-image"></div>
+  			<div class="gap"></div>
+  			<div class="content-box-icon">
+        	<!-- <a href="http://getbarley.com/" class="vanilla"> -->
+        		<%= image_tag 'check.png', class: 'check' %>
+  				<%= image_tag 'vanilla_logo.jpg'%></a>
+  			</div>
+	  		<h3><a href="http://getbarley.com/">Chocolate Icing</a></h3>
+		</div>
+	</div>
+	
+</div>
+
+<div id="add_messages" style="display:none;">
+
   <%= form_for @cake do |cake| %>	
-    <h4>The flavor you have chosen is: </h4><%= cake.text_field :flavor %>
-    <h4>Choose your frosting: </h4><%= cake.text_field :frosting %>
+  	<%= cake.hidden_field :flavor %>
+	<%= cake.hidden_field :frosting %>
     <h4>Add a custom message: </h4><%= cake.text_field :message %>
+    <%= cake.submit %>
   <% end %>
 </div>
 
