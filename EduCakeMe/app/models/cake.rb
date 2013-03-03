@@ -1,3 +1,3 @@
 class Cake < ActiveRecord::Base
-  attr_accessible :flavor, :message, :price, :shape, :size
+  attr_accessible :name, :price, :size, :flavor, :frosting, :message
 end
