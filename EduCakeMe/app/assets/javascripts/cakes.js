@@ -10,6 +10,7 @@ $('document').ready(function(){
 			"background-size": 'cover',
 			"background-position": '20px'
 		})
+
 		$("#frosting-1").data('icing', 'vanilla-yellow')
 
 		$('#frosting-2 .barley-image').css({
@@ -17,6 +18,7 @@ $('document').ready(function(){
 			"background-size": 'cover',
 			"background-position": '20px'
 		})
+
 		$("#frosting-2").data('icing', 'chocolate-yellow')
 
 		$("#hideaway").show("slow");
@@ -32,6 +34,7 @@ $('document').ready(function(){
 			"background-size": 'cover',
 			"background-position": '20px'
 		})
+
 		$("#frosting-1").data('icing', 'vanilla-chocolate')
 
 		$('#frosting-2 .barley-image').css({
@@ -39,6 +42,7 @@ $('document').ready(function(){
 			"background-size": 'cover',
 			"background-position": '20px'
 		})
+		
 		$("#frosting-2").data('icing', 'chocolate-chocolate')
 
 		$("#hideaway").show("slow");
@@ -58,6 +62,8 @@ $('document').ready(function(){
 	{
 		$("#add_messages").show("slow")
 		frosting = $(this).data('icing');
+		$("#cake_flavor").val(flavor)
+		$("#cake_frosting").val(frosting)
 	})
 
 

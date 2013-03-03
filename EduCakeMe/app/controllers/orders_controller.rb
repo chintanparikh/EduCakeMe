@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
   def new
-    @order = Order.new
-    #@order = params[:cake][:id] ? Order.new(:cake_id => params[:cake][:id]) : Order.new
+    #@order = Order.new
+    @order = params[:format] ? Order.new(:cake_id => params[:format]) : Order.new
   end
   
   def create

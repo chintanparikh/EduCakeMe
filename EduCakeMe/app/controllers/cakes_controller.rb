@@ -7,7 +7,7 @@ class CakesController < ApplicationController
   end
 
   def create
-    @cake = Cake.new params[:order]
+    @cake = Cake.new params[:cake]
 
     if @cake.save
       redirect_to new_order_path(@cake)
