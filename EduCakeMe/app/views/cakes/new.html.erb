@@ -6,8 +6,8 @@
 
 		<div class="hero-middle">
 			<%= image_tag 'plain_type_logo.png', :class => 'plain-word'%>
-		</div>		
-		
+		</div>
+
 <!-- Bottom Strip -->
 		<div class="bottom-strip">
 			<div class="scroll-arrow">
@@ -21,7 +21,7 @@
 		<div class="hero-middle-mobile">
 		  <%= image_tag 'plain_type_logo.png', :class => 'plain-word' %>
 		</div>
-		
+
 		<div class="bottom-strip-mobile">
 			<div class="scroll-arrow">
 				<a href="http://plainmade.com/#" class="scroll click">
@@ -38,6 +38,9 @@
 	  <div class="twelve columns">
 	  	<div class="intro">
 	  		<h3 data-barley="plainmade_homepage_intro_title" data-barley-editor="mini">It's easy to send your student a cake!</h3>
+        <p>It’s your kid’s birthday; the first thing you do is bake them a cake, right? Problem is
+  they are 800 miles away at home. EDUcakeME allows parents to send fresh cakes for
+  any occasion right to campus.</p>
 	  	</div>
 	  </div>
   </div>
@@ -47,7 +50,7 @@
 <h4 data-barley="plainmade_homepage_flavor_title" data-barley-editor="mini"><b>Step 1:</b> Pick a delectable cake flavor</h4>
 
 <div class="row">
-  
+
   <div class="six columns">
 		<div class="content-box">
   		<div class="content-box-image barley-image"></div>
@@ -61,7 +64,7 @@
   		<p data-barley="plainmade_barleydescription" data-barley-editor="plus">The Classic-- Light, Fluffy, Delicious.</p>
 		</div>
 	</div>
-	
+
 	<div class="six columns">
 		<div class="content-box">
   		<div class="content-box-image space-image"></div>
@@ -92,7 +95,7 @@
 	  		<h3><a href="http://getbarley.com/">Vanilla Icing</a></h3>
 		</div>
 	</div>
-	
+
 	<div class="six columns" class="frosting">
 		<div class="content-box" id="frosting-2">
   			<div class="content-box-image barley-image"></div>
@@ -112,7 +115,7 @@
 <div id="add_messages" style="display:none;">
   <h4>Step 3: Write a Message on your Cake!</h4>
 
-  <%= form_for @cake do |cake| %>	
+  <%= form_for @cake do |cake| %>
   	<%= cake.hidden_field :flavor %>
 	<%= cake.hidden_field :frosting %>
     <%= cake.text_field :message %>

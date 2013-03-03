@@ -5,6 +5,8 @@ EduCakeMe::Application.routes.draw do
   resources :universities
   resources :cakes
   resources :charges
+  resources :abouts
+
 
   root :to => "cakes#new"
   # The priority is based upon order of creation:
