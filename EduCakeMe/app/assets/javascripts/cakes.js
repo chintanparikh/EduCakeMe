@@ -42,7 +42,7 @@ $('document').ready(function(){
 			"background-size": 'cover',
 			"background-position": '20px'
 		})
-		
+
 		$("#frosting-2").data('icing', 'chocolate-chocolate')
 
 		$("#hideaway").show("slow");
@@ -52,6 +52,7 @@ $('document').ready(function(){
 
 	$("#frosting-1").click(function()
 	{
+		$('#frosting-1 .check').css({opacity: 1});
 		$("#add_messages").show("slow")
 		frosting = $(this).data('icing');
 		$("#cake_flavor").val(flavor)
@@ -60,11 +61,14 @@ $('document').ready(function(){
 
 	$("#frosting-2").click(function()
 	{
+		$('#frosting-2 .check').css({opacity: 1});
 		$("#add_messages").show("slow")
 		frosting = $(this).data('icing');
 		$("#cake_flavor").val(flavor)
 		$("#cake_frosting").val(frosting)
 	})
+
+
 
 
 
