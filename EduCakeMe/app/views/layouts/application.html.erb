@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>EduCakeMe</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
+
+<!-- HEADER -->
+<!-- saved from url=(0021)http://plainmade.com/ -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUcakeME</title>
+    <!--<script type="text/javascript" async="" src="../../assets/javascripts/ga.js"></script>
+    <script type="text/javascript" src="../../assets/javascripts/base.js"></script>
+-->
+    <!--<base href="/">--><base href=".">
+    <%= javascript_include_tag 'foundation.min.js', 'app.js', 'base.js', 'application.js', 'ga.js'%>
+    <%= stylesheet_link_tag 'styles.css', 'jquery-1.9.1.min.js', 'jquery-migrate-1.1.1.min.js' %>  
+  
+  <link rel="icon" type="image/x-icon" href="http://plainmade.com/images/favicon.ico">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Plain Text: Full Entries Feed" href="http://plainmade.com/blog/feed">
+    <style type="text/css">@media print{#STTBimg{ display:none; }#STTBimg2{ display:none; }}</style></head>
+
+    <!-- Navigation -->
+        <nav class="top-bar fixed" >
+            <div class="row">
+                <ul>
+                  <li class="name">
+                <a href="./EduCakeMe_files/EduCakeMe.html"><%= image_tag 'plain_type_logo.png', :style => 'margin-top:18px', :width => '74'%>
+                  </li>
+                  <li class="toggle-topbar"><a href="http://plainmade.com/#"><%= image_tag 'menu.svg', :width => '22'%></a></li>
+                </ul>
+              <ul class="right">
+                 <li><a href="http://plainmade.com/company" title="Plain">Home<span class="nav-arrow show-for-small">
+                  <%= image_tag 'nav_arrow.svg', :width => '7'%></span></a></li>
+                <li><a href="http://plainmade.com/company" title="Plain">Order<span class="nav-arrow show-for-small">
+                  <%= image_tag 'nav_arrow.svg', :width => '7'%></span></a></li>
+                <li><a href="http://plainmade.com/space" title="Plain Space">Bakeries<span class="nav-arrow show-for-small">
+                  <%= image_tag 'nav_arrow.svg', :width => '7'%></span></a></li>
+                <li><a href="http://plainmade.com/blog" title="Plain Text">Contact<span class="nav-arrow show-for-small">
+                  <%= image_tag 'nav_arrow.svg', :width => '7'%></span></a></li></span></a></li>
+              </ul>
+            </div>
+        </nav>
 <body>
-
 <%= yield %>
-
 </body>
+
+<!-- Footer -->
+  <footer id="footer">
+    <div class="row">
+        <div class="six columns">
+            <ul class="link-list left bottom-nav hide-for-small">
+              <li><a href="./EduCakeMe_files/EduCakeMe.html" title="Home">Home</a></li>
+              <li><a href="http://plainmade.com/company" title="Plain">Order</a></li>
+              <li><a href="http://plainmade.com/space" title="Plain Space">Bakeries</a></li>
+              <li><a href="http://plainmade.com/blog" title="Plain Text">Contact</a></li>
+            </ul>
+            <ul class="link-list bottom-nav show-for-small">
+                <li><a href="https://twitter.com/plainmade" title="Follow us on Twitter">@plainmade on Twitter</a></li>
+            </ul>
+        </div>
+        <div class="six columns">
+            <p class="copyright">© EDUcakeME.</p>
+        </div>
+    </div>
+
+  </footer>
+
+    <!-- JS -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a.scroll').click(function(e){
+                e.preventDefault();
+                $('html, body').animate({scrollTop:$('#scroll-here').position().top}, 1200);
+            });
+        });
+    </script>
+
+        <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38410824-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  
+
+
 </html>
