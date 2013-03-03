@@ -1,0 +1,92 @@
+<!-- if blog <body class="blog-bg"> -->
+
+<!-- Hero Image -->
+	<div class="hero hide-for-small">
+	  <%= image_tag 'plain_field.jpg', :class => 'placeholder hide-for-small'%>
+
+		<div class="hero-middle">
+			<%= image_tag 'plain_type_logo.png', :class => 'plain-word'%>
+		</div>		
+		
+<!-- Bottom Strip -->
+		<div class="bottom-strip">
+			<div class="scroll-arrow">
+				<a href="http://plainmade.com/#" class="scroll click"><%= image_tag 'plain_plus.svg' %></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="show-for-small">
+	  <%= image_tag 'plain_field.jpg', :class => 'mobile-hero'%>
+		<div class="hero-middle-mobile">
+		  <%= image_tag 'plain_type_logo.png', :class => 'plain-word' %>
+		</div>
+		
+		<div class="bottom-strip-mobile">
+			<div class="scroll-arrow">
+				<a href="http://plainmade.com/#" class="scroll click">
+				  <%= image_tag 'plain_plus.svg' %></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll-here" style="height:110px;margin:-60px 0 50px;"></div>
+
+<!-- Intro -->
+
+  <div class="row">
+	  <div class="twelve columns">
+	  	<div class="intro">
+	  		<h3 data-barley="plainmade_homepage_intro_title" data-barley-editor="mini">HEADER TEXT</h3>
+	  		<p data-barley="plainmade_homepage_intro_content" data-barley-editor="simple">Insert shpeal about why we are good.</p>
+	  	</div>
+	  </div>
+  </div>
+
+<!-- Featured Blocks -->
+
+<h4 data-barley="plainmade_homepage_flavor_title" data-barley-editor="mini">Pick a delectable cake flavor</h4>
+
+<div class="row">
+  
+  <div class="six columns">
+		<div class="content-box">
+  		<div class="content-box-image barley-image"></div>
+  		<div class="gap"></div>
+  		<div class="content-box-icon" id="content-box-1"\>
+        <!-- <a href="http://getbarley.com/" class="vanilla"> -->
+        	<%= image_tag 'check.png', class: 'check' %>
+  			<%= image_tag 'vanilla_logo.jpg'%></a>
+  		</div>
+  		<h3><a href="http://getbarley.com/">Yellow</a></h3>
+  		<p data-barley="plainmade_barleydescription" data-barley-editor="plus">Description of sexy yellow cake.&nbsp;
+  		  <a href="http://getbarley.com/">More...</a></p>
+		</div>
+	</div>
+	
+	<div class="six columns">
+		<div class="content-box">
+  		<div class="content-box-image space-image"></div>
+  		<div class="gap"></div>
+  		<ul><div class="content-box-icon" id="content-box-2">
+        <!-- <a href="http://plainmade.com/space" class="chocolate"> -->
+        	<%= image_tag 'check.png', class: 'check' %>
+  			<%= image_tag 'chocolate_logo.jpg'%></a>
+  		</div></ul>
+  		<h3><a href="http://plainmade.com/space">Chocolate</a></h3>
+  		<p data-barley="plainmade_plainspacedescription" data-barley-editor="plus">Description of sexy chocolate cake.
+  		  <a href="http://plainmade.com/space">More...</a></p>
+		</div>
+	</div>
+</div>
+
+<div id="hideaway" style="display:none;">
+  <%= form_for @cake do |cake| %>	
+    <h4>The flavor you have chosen is: </h4><%= cake.text_field :flavor %>
+    <h4>Choose your frosting: </h4><%= cake.text_field :frosting %>
+    <h4>Add a custom message: </h4><%= cake.text_field :message %>
+  <% end %>
+</div>
+
+
+
