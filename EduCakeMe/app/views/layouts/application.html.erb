@@ -11,9 +11,10 @@
 -->
     <!--<base href="/">--><base href=".">
     <%= javascript_include_tag 'foundation.min.js', 'app.js', 'base.js', 'application.js', 'ga.js'%>
+
     <%= stylesheet_link_tag 'styles.css', 'jquery-1.9.1.min.js', 'jquery-migrate-1.1.1.min.js' %>
 
-  <link rel="icon" type="image/x-icon" href="http://plainmade.com/images/favicon.ico">
+  <%= favicon_link_tag "favicon.png" %>
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Plain Text: Full Entries Feed" href="http://plainmade.com/blog/feed">
     <style type="text/css">@media print{#STTBimg{ display:none; }#STTBimg2{ display:none; }}</style></head>
@@ -23,7 +24,7 @@
             <div class="row">
                 <ul>
                   <li class="name">
-                <a href="./EduCakeMe_files/EduCakeMe.html"><%= image_tag 'plain_type_logo.png', :style => 'margin-top:18px', :width => '74'%>
+                <a href="./EduCakeMe_files/EduCakeMe.html"><%= image_tag 'logo_small.png', :style => 'margin-top:18px', :width => '74'%>
                   </li>
                   <li class="toggle-topbar"><a href="http://plainmade.com/#"><%= image_tag 'menu.svg', :width => '22'%></a></li>
                 </ul>

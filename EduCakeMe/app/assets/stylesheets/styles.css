@@ -6021,7 +6021,7 @@ h3 {
 
 /* line 154, ../sass/styles.scss */
 .hero {
-  height: 800px;
+  height: 600px;
   max-height: 100%;
   background: url(../assets/plain_field.jpg) no-repeat center center fixed;
   -webkit-background-size: 100%;
@@ -7172,6 +7172,23 @@ h4{
 	text-align: center;
   color: 15px;
 	
+}
+
+#new_order {
+  text-align: center;
+}
+#new_order input {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#new_order select {
+  width: 300px;
+}
+
+#new_order textarea {
+  width: 300px;
+  margin : 0 auto;
 }
 
 /* line 302, ../sass/_blog.scss */

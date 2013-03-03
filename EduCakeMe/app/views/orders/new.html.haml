@@ -1,6 +1,7 @@
 %h1 Order Details
 
-=form_for(@order) do |f|
+
+=form_for(@order, id: 'order_form') do |f|
   =f.label :deliver_to_name
   =f.text_field :deliver_to_name
 
@@ -33,7 +34,7 @@
   %br
 
   =f.label :special_instructions
-  =f.text_area :special_instructions
+  =f.text_area :special_instructions, rows: 4
 
   %br
 
